@@ -12,6 +12,11 @@ body{
 background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(7,46,145,1) 52%, rgba(23,153,180,1) 100%);
 }
 
+img {
+    max-height: 100%;
+    height: auto;
+}
+
 #textoInicial{
     margin-left: 10%;
     color: aliceblue;
@@ -33,12 +38,12 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba
 } */
 
 .text-box{
-    background-color: rgba(228, 228, 76, 0.808);
-    height: 40%;
+    background-color: rgba(240, 240, 76, 0.795);
+    height: 35%;
     border-radius: 1px 1px 30px 5px;
     align-self: center;
     position: absolute;
-    bottom: -42%;
+    bottom: -37%;
     width: 99%;
     border: 2px solid #eed7319e;
     transition: transform 0.5s;
