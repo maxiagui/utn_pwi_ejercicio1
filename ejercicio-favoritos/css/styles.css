@@ -25,17 +25,18 @@ img {
 .fav-box{
     position: relative;
     overflow: hidden;
-    margin: 3px;
+    margin: 5px 5px 20px 5px;
     height: 260px;
     width: 260px;
     border-style: none;
     border-radius: 30px 5px 30px 5px ;
     background-color: blue;
-    /* transition: transform; */
+    transition: all 0.2s;
 }
-/* .fav-box:hover{
-    transform: scale(2, 0.1s);
-} */
+
+.fav-box:hover{
+    transform: scale(1.1);
+}
 
 .text-box{
     background-color: rgba(240, 240, 76, 0.795);
@@ -43,19 +44,14 @@ img {
     border-radius: 1px 1px 30px 5px;
     align-self: center;
     position: absolute;
-    bottom: -37%;
     width: 99%;
     border: 2px solid #eed7319e;
-    transition: transform 0.5s;
+    bottom: 0px;
 }
 
-.fav-box:hover .text-box {
-    transform: translateY(-100%);
-  }
-
 .container{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
     display: flex;
     display: flex;
     flex-direction: row;
@@ -78,4 +74,42 @@ div p, h2 {
     margin-left: 10%;
     margin-top: 50px;
     color: aliceblue;
+}
+
+@media (min-width: 480px){
+    .container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .fav-box{
+        margin: 15px;
+    }
+}
+@media (min-width: 1024px){
+    .container{
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+}
+
+@media (min-width: 2560px){
+    .container{
+        margin-left: 4%;
+        margin-right: 4%;
+        height: 512px;
+    }
+
+}
+
+@media (any-hover:hover) {
+
+    .text-box{
+        bottom: -37%;
+        transition: transform 0.5s;
+    }
+    .fav-box:hover .text-box {
+        transform: translateY(-100%);
+      }
+    
 }
